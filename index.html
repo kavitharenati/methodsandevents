@@ -12,23 +12,23 @@
          }
         #name{
             width:80vw;
-            display:flex;;
+            display:flex;
             justify-content:center;
         }
         button{
-            padding: 10px ;
-            background-color: aqua;
-            margin-bottom: 20px;
-            font-size: 20px;
-            margin-top: 20px;
+            padding:10px;
+            background-color:aqua;
+            margin-bottom:20px;
+            font-size:20px;
+            margin-top:20px;
         }
     </style>
   </head>
   <body>
-   <div id="name"> <button id="bt">Click Me</button></div>
+   <div id="name"><button id="bt">Click Me</button></div>
 
     <script>
-        let ob = [
+        let ob=[
         {
           id: 1,
           title: "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
@@ -243,7 +243,6 @@
       ];
 
         let btn=document.getElementById("bt");
-
         let mp=document.createElement("div");
         document.body.appendChild(mp);
         mp.style.display="flex";
@@ -283,16 +282,11 @@
             p2.style.fontSize="13px";
             p2.style.padding="5px";
 
-
-
             let p3=document.createElement("p");
             div.appendChild(p3);
             p3.innerHTML="<b>Description : </b>"+ob[count].description;
             p3.style.fontSize="11.5px";
             p3.style.padding="5px";
-
-
-
             count++;
             if(count>19){
             return alert("No More Products")
